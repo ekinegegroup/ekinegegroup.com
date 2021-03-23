@@ -22,13 +22,6 @@
 
   	gtag('config', 'UA-114658210-1');
 	</script>
-<script type="text/javascript">
-         <!--
-            function hata() {
-               alert ("Geçici olarak servis dışı. Telefon numaramızdan bize ulaşabilirsiniz.");
-            }
-         //-->
-      </script>
 	<meta name="description" content="Ekin Cafe,Düğün,Toplantı ve Konferans Salonu - Başbağlar mah Kırklar cad. no:116, Erzincan">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>EKIN Cafe & Dugun Salonu & Catering</title>
@@ -79,33 +72,6 @@
 
 	</head>
 	<body>
-
-	<div id="fh5co-container">
-		<div id="fh5co-home" class="js-fullheight" data-section="home">
-
-			<div class="flexslider">
-				
-				<div class="fh5co-overlay"></div>
-				<div class="fh5co-text">
-					<div class="container">
-						<div class="row">
-							<h1 class="to-animate">Ekin</h1>
-							<h2 class="to-animate">Cafe & Dugun Salonu & Catering</h2>
-							<h3 class="to-animate" id="beyaz">Yemeklerimiz Birer Sanat Eseri.</h3>
-
-						</div>
-					</div>
-				</div>
-			  	<ul class="slides">
-			   	<li style="background-image: url(images/gokyuzu.jpg);" data-stellar-background-ratio="0.5"></li>
-			   	<li style="background-image: url(images/gokyuzu.jpg);" data-stellar-background-ratio="0.5"></li>
-			   	<li style="background-image: url(images/gokyuzu.jpg);" data-stellar-background-ratio="0.5"></li>
-			  	</ul>
-
-			</div>
-			
-		</div>
-		
 		<div class="js-sticky">
 			<div class="fh5co-main-nav">
 				<div class="container-fluid">
@@ -127,9 +93,9 @@
 			</div>
 		</div>
 
-		<div id="fh5co-about" data-section="about">
+		<div id="fh5co-about" style="margin-top: 1px" data-section="about">
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/cafe.jpg)"></div>
-			<div class="fh5co-2col fh5co-text">
+			<div class="fh5co-2col fh5co-text" style="margin-top: 3px">
 				<h2 class="heading to-animate">Hakkımızda</h2>
 				<p class="to-animate"><span class="firstcharacter">2</span>015 Yılında Erkan COSKUN Tarafından Kurulan Sektöründe Erzincanda En Kaliteli Hizmet Vermek Amacıyla Kuruldu.</p>
 				<p class="text-center to-animate"><a href="galeri.html" class="btn btn-primary btn-outline">Daha Fazla</a></p>
@@ -511,40 +477,37 @@
 							<li><i class="icon-envelope"></i>info@ekinegegroup.com</li>
 						</ul>
 					</div>
-					<form name="contactform" method="post">
+					<form action="https://formspree.io/f/xjvjbryq"
+							method="POST">
 					<div class="col-md-6 to-animate-2">
 						<h3>Bize Ulaşın</h3>
 						<div class="form-group ">
 							<label for="name" class="sr-only">isim</label>
-							<input id="name" class="form-control" placeholder="isim" type="text">
+							<input name="name" id="name" class="form-control" placeholder="isim" type="text">
 						</div>
 						<div class="form-group ">
 							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
+							<input name="email" id="email" class="form-control" placeholder="Email" type="email">
 						</div>
 						<div class="form-group">
 							<label for="occation" class="sr-only">Rezervasyon Türü</label>
-							<select class="form-control" id="occation">
+							<select name="reservation-type" class="form-control" id="occation">
 								<option>Rezarvasyon Türü</option>
 							  <option>Düğün</option>
 							  <option>Sünnet</option>
 							  <option>Diğer</option>
 							</select>
 						</div>
-						<div class="form-group ">
-							<label for="date" class="sr-only">Tarih</label>
-							<input id="date" class="form-control" placeholder="Tarih &amp; Zaman" type="text">
+						<div class="form-group">
+							<input type="tel" id="phone" placeholder="Telefon Numaranız" name="phone" class="form-control">
 						</div>
 
-
-							
 						<div class="form-group ">
 							<label for="message" class="sr-only">Mesajınız</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Mesaj"></textarea>
+							<textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Mesaj"></textarea>
 						</div>
 						<div class="form-group ">
-							<input class="btn btn-primary" value="Gönder" type="submit" onclick="hata();">
-						</div>
+							<input class="btn btn-primary" value="Gönder" type="submit">
 						</div>
 				</div>
 			</div>
